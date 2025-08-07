@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nimitok</title>
+  <style>
+    body {
+      font-family: Transcity, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+    header, footer {
+      background-color: #0e0d0d;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+    main {
+      padding: 2em;
+      max-width: 800px;
+      margin: auto;
+      background: #ffffff;
+    }
+    form {
+      display: grid;
+      gap: 1em;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5em;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+      padding: 0.5em;
+    }
+    section {
+      margin-bottom: 2em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Creative in th' wild</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>About</h2>
+      <p>This page is student registration portal to Creative in th' wild Copwriting Bootcamp</p>
+      <ul>
+        <li>Last Summer BootCamp</li>
+        <li>Memory directorate</li>
+        <li>2025 itinerary</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Media</h2>
+      <figure>
+        <img src="Creative in th' wild.jpg" alt="Creative in the Wild" width="50%" />
+        <figcaption>Our Anthology Cover.</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Camp Facilitator</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Asake Prem</td>
+            <td>Camp Provost</td>
+            <td>ASAKE@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Tam Rodney</td>
+            <td>Welfare</td>
+            <td>TamRodney@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <div>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required />
+        </div>
+
+        <div>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="example@domain.com" required />
+        </div>
+
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="At least 8 characters" required minlength="8" />
+        </div>
+
+        <div>
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+        </div>
+
+        <div>
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Interests:</label>
+          <input type="checkbox" id="Content-creation" name="interests" value="Content-creation" />
+          <label for="sports">Content-creation</label>
+          <input type="checkbox" id="Writer's room" name="interests" value="Writer's room" />
+          <label for="music">Writer's room</label>
+          <input type="checkbox" id="Designer's parlour" name="interests" value="Designer's parlour" />
+          <label for="reading">Designer's parlour</label>
+        </div>
+
+        <div>
+          <label for="bio">Short Bio:</label>
+          <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+        </div>
+
+        <div>
+          <label for="readonly-field">Referral Code:</label>
+          <input type="text" id="readonly-field" value="AUTO1234" readonly />
+        </div>
+
+        <div>
+          <label for="file">Upload a Profile Picture:</label>
+          <input type="file" id="file" name="profilePic" accept="image/*" />
+        </div>
+
+        <div>
+          <label for="range">Rate our site:</label>
+          <input type="range" id="range" name="rating" min="1" max="10" />
+        </div>
+
+        <div>
+          <button type="submit">Submit Form</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Nimitok. All rights reserved.</p>
+  </footer>
+</body>
+</html>
